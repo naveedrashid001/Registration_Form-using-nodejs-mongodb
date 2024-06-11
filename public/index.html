@@ -17,15 +17,16 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-4 offset-4 mt-5" >
-                <form action="" >
+                <form action="/sign_up" method="POST" >
                     <h3>registration form</h3>
-                    <input type="text" class="form-control" id="name" placeholder="enter your name">
-                    <input type="number" class="form-control" id="age" placeholder="enter your age">
-                    <input type="email" class="form-control" id="email" placeholder="enter your email">
-                    <input type="number" class="form-control" id="mobile" placeholder="enter your mobile number">
-                    <input type="text" class="form-control" id="gender" placeholder="enter your gender">
-                    <input type="password" class="form-control" id="password" placeholder="enter your password">
-                    <button class="btn btn-primary form-control mt-2">submit</button>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="enter your name">
+                    <input type="number" class="form-control" id="age" name="age" placeholder="enter your age">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="enter your email">
+                    <input type="number" class="form-control" id="phno" name="phno" placeholder="enter your mobile number">
+                    <input type="text" class="form-control" id="gender" name="gender" placeholder="enter your gender">
+                    <input type="password" class="form-control" id="password" name="password" placeholder="enter your password">
+                    <button type="submit" class="btn btn-primary form-control mt-2">submit</button>
+                    <!-- <input type="submit" value="Submit" id="submit" class="btn btn-primary" /> -->
                     
                 </form>
             </div>
