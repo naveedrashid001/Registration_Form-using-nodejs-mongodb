@@ -2,7 +2,7 @@ const express=require("express")
 const mongoose= require("mongoose");
 var bodyParser=require("body-parser")
 
-// const PORT = 4000;
+const PORT = 3000;
 const app=express();
 
 // app.use(express.json());
@@ -47,10 +47,8 @@ app.post("/sign_up",(req,res) => {
         console.log("Record Inserted Succesfully")
     })
     return res.redirect('signup_successfull.html')
-}).listen(3000);
-
-console.log("Listening on port 3000")
+})
 
 
 
-// app.listen(PORT, ()=>console.log(`Server is running at port no : ${PORT}`));
+app.listen(PORT, ()=>console.log(`Server is running at port no : ${PORT}`));
